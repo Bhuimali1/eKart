@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>eKart</title>
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="responsive.css">
+
+
+
+</head>
+
+
+<body>
+
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+
+        <!-- TOP INFORMATION AREA -->
+
+        <div class="top-navbar">
+
+            <!-- Logo -->
+
+            <div class="logo">
+
+                <img src="images/logo/cartLogo.png" alt="Cart">
+
+                <span>eKart</span>
+
+            </div>
+
+
+            <!-- <-- Contact Information -->
+
+            <div class="contact-information">
+
+
+                <div class="contact-item">
+
+                    <span>
+                       <span class="call-icon">☎</span> +91 8104100609
+                    </span>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <span>
+                        support@ekart.in
+                    </span>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <span>
+                        Kolkata, India
+                    </span>
+
+                </div>
+
+
+                <div class="top-links">
+
+                    <a href="#">
+                        Tracking
+                    </a>
+
+                    <span>|</span>
+
+                    <a href="#">
+                        Blog
+                    </a>
+
+                    <span>|</span>
+
+                    <a href="#">
+                        Sell On eKart
+                    </a>
+
+                    <span>|</span>
+
+                    <a href="#">
+                        24×7 Customer
+                    </a>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- Mobile Menu Button -->
+
+            <button
+                class="menu-button"
+                type="button"
+                onclick="openMobileMenu()"
+                aria-label="Open menu"
+            >
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+        </div>
+
+
+
+        <!-- SEARCH AREA -->
+
+        <div class="search-row">
+
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    placeholder="Search products..."
+                >
+
+            </div>
+
+
+            <!-- Cart -->
+
+            <button
+                class="cart-button" type="button" >
+                <span class="cart-icon">
+                    <img src="" alt="">
+                </span>
+
+                <span  class="cart-text">
+                    My Cart
+                </span>
+
+            </button>
+
+
+        </div>
+
+
+
+        <!-- DESKTOP / MOBILE CATEGORY MENU -->
+
+        <nav
+            class="category-navbar"
+            id="categoryNavbar"
+        >
+
+
+            <!-- Mobile Menu Header -->
+
+            <div class="mobile-menu-header">
+
+                <strong>
+                    Menu
+                </strong>
+
+                <button
+                    class="close-button"
+                    type="button"
+                    onclick="closeMobileMenu()"
+                    aria-label="Close menu"
+                >
+
+                    <i class="fa-solid fa-xmark"></i>
+
+                </button>
+
+            </div>
+
+
+
+            <!-- ALL CATEGORIES -->
+
+            <div class="all-categories">
+
+                <button
+                    class="all-categories-button"
+                    type="button"
+                    onclick="toggleCategories()"
+                >
+
+                    <span>
+                       ☰ All Categories
+                    </span>
+
+                    <i
+                        class="fa-solid fa-chevron-down category-arrow"
+                    ></i>
+
+                </button>
+
+
+                <!-- Dropdown -->
+
+                <div
+                    class="categories-dropdown"
+                    id="categoriesDropdown"
+                >
+
+                    <a href="#">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        Mobiles & Tablets
+                    </a>
+
+
+                    <a href="#">
+                        <i class="fa-solid fa-laptop"></i>
+                        Laptops & Computers
+                    </a>
+
+
+                    <a href="#">
+                        <i class="fa-solid fa-headphones"></i>
+                        Audio
+                    </a>
+
+
+                    <a href="#">
+                        <i class="fa-solid fa-house"></i>
+                        Home Appliances
+                    </a>
+
+
+                    <a href="#">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        Beauty & Personal Care
+                    </a>
+
+
+                    <a href="#">
+                        <i class="fa-solid fa-shirt"></i>
+                        Fashion
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!--  MAIN NAVIGATION -->
+
+            <a href="#" class="nav-link">
+                Gifts
+            </a>
+
+
+            <a href="#" class="nav-link">
+                Electronics
+            </a>
+
+
+            <a href="#" class="nav-link">
+                Fashion
+            </a>
+
+
+            <a href="#" class="nav-link">
+                Beauty
+            </a>
+
+
+            <a href="#" class="nav-link">
+                Appliances
+            </a>
+
+
+            <a href="#" class="nav-link">
+                Featured Deals
+            </a>
+
+
+            <a href="#" class="nav-link">
+                Mobiles
+            </a>
+
+
+            <a href="#" class="nav-link">
+                More
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
+
+
+        </nav>
+
+
+    </header>
+
+
+
+    <!--JAVASCRIPT-->
+
+    <script>
+
+
+        /* OPEN MOBILE MENU*/
+
+        function openMobileMenu() {
+
+            document
+                .getElementById("categoryNavbar")
+                .classList.add("menu-open");
+
+        }
+
+        /* CLOSE MOBILE MENU */
+
+        function closeMobileMenu() {
+
+            document
+                .getElementById("categoryNavbar")
+                .classList.remove("menu-open");
+
+
+            document
+                .getElementById("categoriesDropdown")
+                .classList.remove("categories-open");
+
+        }
+
+        /* ALL CATEGORIES DROPDOWN  */
+
+        function toggleCategories() {
+
+            document
+                .getElementById("categoriesDropdown")
+                .classList.toggle("categories-open");
+
+        }
+
+        /* CLOSE DROPDOWN WHEN CLICKING OUTSIDE  */
+
+        document.addEventListener(
+            "click",
+            function(event) {
+
+                const categoryBox =
+                    document.querySelector(".all-categories");
+
+                if (
+                    categoryBox &&
+                    !categoryBox.contains(event.target)
+                ) {
+
+                    document
+                        .getElementById("categoriesDropdown")
+                        .classList.remove(
+                            "categories-open"
+                        );
+
+                }
+
+            }
+        );
+
+
+    </script>
+
+
+</body>
+
+</html>
