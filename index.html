@@ -1,386 +1,346 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eKart</title>
 
-
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="stylesheet" href="responsive.css">
-
-
-
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/deals.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/latest.css">
+    <link rel="stylesheet" href="css/trending.css">
+    <link rel="stylesheet" href="css/discover.css">
+    <link rel="stylesheet" href="css/newsletter.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
-
 
 <body>
 
-
-    <!-- NAVBAR -->
-
+    <!-- Navbar -->
     <header class="navbar">
-
-
-        <!-- TOP INFORMATION AREA -->
 
         <div class="top-navbar">
 
-            <!-- Logo -->
-
             <div class="logo">
-
-                <img src="images/logo/cartLogo.png" alt="Cart">
-
+                <img src="images/logo/cart.png" alt="Cart">
                 <span>eKart</span>
-
             </div>
-
-
-            <!-- <-- Contact Information -->
 
             <div class="contact-information">
 
-
                 <div class="contact-item">
-
                     <span>
-                       <span class="call-icon">☎</span> +91 8104100609
+                        <span class="call-icon">☎</span> +91 8104100609
                     </span>
-
                 </div>
 
-
                 <div class="contact-item">
-
-                    <span>
-                        support@ekart.in
-                    </span>
-
+                    <span>support@ekart.in</span>
                 </div>
 
-
                 <div class="contact-item">
-
-                    <i class="fa-solid fa-location-dot"></i>
-
-                    <span>
-                        Kolkata, India
-                    </span>
-
+                    <span>Kolkata, India</span>
                 </div>
-
 
                 <div class="top-links">
-
-                    <a href="#">
-                        Tracking
-                    </a>
-
+                    <a href="#">Tracking</a>
                     <span>|</span>
-
-                    <a href="#">
-                        Blog
-                    </a>
-
+                    <a href="#">Blog</a>
                     <span>|</span>
-
-                    <a href="#">
-                        Sell On eKart
-                    </a>
-
+                    <a href="#">Sell On eKart</a>
                     <span>|</span>
-
-                    <a href="#">
-                        24×7 Customer
-                    </a>
-
+                    <a href="#">24×7 Customer</a>
                 </div>
-
 
             </div>
 
-
-            <!-- Mobile Menu Button -->
-
-            <button
-                class="menu-button"
-                type="button"
-                onclick="openMobileMenu()"
-                aria-label="Open menu"
-            >
-
-                <i class="fa-solid fa-bars"></i>
-
+            <button class="menu-button" type="button" onclick="openMobileMenu()" aria-label="Open menu">
+                ☰
             </button>
 
         </div>
-
-
-
-        <!-- SEARCH AREA -->
 
         <div class="search-row">
 
-
             <div class="search-box">
-
-                <i class="fa-solid fa-magnifying-glass"></i>
-
-                <input
-                    type="text"
-                    placeholder="Search products..."
-                >
-
+                <span class="search-icon">⌕</span>
+                <input type="text" placeholder="Search products...">
             </div>
 
-
-            <!-- Cart -->
-
-            <button
-                class="cart-button" type="button" >
+            <button class="cart-button" type="button">
                 <span class="cart-icon">
-                    <img src="" alt="">
+                    <img src="images/logo/cart.png" alt="Cart">
                 </span>
-
-                <span  class="cart-text">
-                    My Cart
-                </span>
-
+                <span class="cart-text">My Cart</span>
+                <span class="cart-arrow">⌄</span>
             </button>
-
 
         </div>
 
-
-
-        <!-- DESKTOP / MOBILE CATEGORY MENU -->
-
-        <nav
-            class="category-navbar"
-            id="categoryNavbar"
-        >
-
-
-            <!-- Mobile Menu Header -->
+        <nav class="category-navbar" id="categoryNavbar">
 
             <div class="mobile-menu-header">
+                <strong>Menu</strong>
 
-                <strong>
-                    Menu
-                </strong>
-
-                <button
-                    class="close-button"
-                    type="button"
-                    onclick="closeMobileMenu()"
-                    aria-label="Close menu"
-                >
-
-                    <i class="fa-solid fa-xmark"></i>
-
+                <button class="close-button" type="button" onclick="closeMobileMenu()" aria-label="Close menu">
+                    ×
                 </button>
-
             </div>
-
-
-
-            <!-- ALL CATEGORIES -->
 
             <div class="all-categories">
 
-                <button
-                    class="all-categories-button"
-                    type="button"
-                    onclick="toggleCategories()"
-                >
-
-                    <span>
-                       ☰ All Categories
-                    </span>
-
-                    <i
-                        class="fa-solid fa-chevron-down category-arrow"
-                    ></i>
-
+                <button class="all-categories-button" type="button" onclick="toggleCategories()">
+                    <span>☰ All Categories</span>
                 </button>
 
+                <div class="categories-dropdown" id="categoriesDropdown">
+                    <a href="#">Mobiles & Tablets</a>
+                    <a href="#">Laptops & Computers</a>
+                    <a href="#">Audio</a>
+                    <a href="#">Home Appliances</a>
+                    <a href="#">Beauty & Personal Care</a>
+                    <a href="#">Fashion</a>
+                </div>
 
-                <!-- Dropdown -->
+            </div>
 
-                <div
-                    class="categories-dropdown"
-                    id="categoriesDropdown"
-                >
+            <a href="#" class="nav-link">Gifts</a>
+            <a href="#" class="nav-link">Electronics</a>
+            <a href="#" class="nav-link">Fashion</a>
+            <a href="#" class="nav-link">Beauty</a>
+            <a href="#" class="nav-link">Appliances</a>
+            <a href="#" class="nav-link">Featured Deals</a>
+            <a href="#" class="nav-link">Mobiles</a>
 
-                    <a href="#">
-                        <i class="fa-solid fa-mobile-screen-button"></i>
-                        Mobiles & Tablets
-                    </a>
+            <a href="#" class="nav-link">
+                More
+            </a>
 
+        </nav>
 
-                    <a href="#">
-                        <i class="fa-solid fa-laptop"></i>
-                        Laptops & Computers
-                    </a>
+    </header>
 
+    <main>
 
-                    <a href="#">
-                        <i class="fa-solid fa-headphones"></i>
-                        Audio
-                    </a>
+        <!-- Hero Section -->
+        <section class="hero-section">
 
+            <div class="hero-content">
 
-                    <a href="#">
-                        <i class="fa-solid fa-house"></i>
-                        Home Appliances
-                    </a>
+                <div class="hero-left">
+                    <p class="hero-small-text">
+                        Premium <strong>3D Phone Mockup Included</strong> with PSD
+                    </p>
 
+                    <h1>Phone 16 Pro</h1>
 
-                    <a href="#">
-                        <i class="fa-solid fa-wand-magic-sparkles"></i>
-                        Beauty & Personal Care
-                    </a>
+                    <p class="hero-description">
+                        6.3 inch OLED Screen &nbsp;|&nbsp; Super Retina XDR display<br>
+                        Dynamic Island &nbsp;|&nbsp; 1000 nits max brightness
+                    </p>
 
+                    <div class="price-box">
+                        <span class="price-label">Price</span>
+                        <span class="price-value">$1500</span>
+                    </div>
 
-                    <a href="#">
-                        <i class="fa-solid fa-shirt"></i>
-                        Fashion
-                    </a>
+                    <div class="preorder-box">
+
+                        <p>
+                            Pre-order starting<br>
+                            from <strong>25<sup>th</sup> October</strong>
+                        </p>
+
+                        <button class="hero-arrow" type="button">
+                            →
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="hero-right">
+
+                    <div class="hero-watermark">PRO</div>
+
+                    <div class="floating-icon floating-icon-one">
+                        <span>♥</span>
+                    </div>
+
+                    <div class="floating-icon floating-icon-two">
+                        <span>♥</span>
+                    </div>
+
+                    <div class="floating-icon floating-icon-three">
+                        <span>♥</span>
+                    </div>
+
+                    <img src="images/hero/phone.png" alt="Phone 16 Pro" class="hero-phone">
 
                 </div>
 
             </div>
 
+        </section>
 
+        <!-- Deals Section -->
+        <section class="deals-section">
 
-            <!--  MAIN NAVIGATION -->
+            <h2>Deals of the Day</h2>
 
-            <a href="#" class="nav-link">
-                Gifts
-            </a>
+            <div class="deals-container">
 
+                <div class="deal-item">
+                    <img src="images/deals/d1.png" alt="Grocery & Essentials">
+                    <h3>Grocery & Essentials</h3>
+                    <p>Upto 30% Off</p>
+                    <span>Grab Now</span>
+                </div>
 
-            <a href="#" class="nav-link">
-                Electronics
-            </a>
+                <div class="deal-item">
+                    <img src="images/deals/d2.png" alt="Best of Creams">
+                    <h3>Best of Creams</h3>
+                    <p>Upto 30% Off</p>
+                    <span>Lakme & More</span>
+                </div>
 
+                <div class="deal-item">
+                    <img src="images/deals/d3.png" alt="Smart Devices">
+                    <h3>Smart Devices</h3>
+                    <p>Upto 30% Off</p>
+                    <span>Best Deals</span>
+                </div>
 
-            <a href="#" class="nav-link">
-                Fashion
-            </a>
+                <div class="deal-item">
+                    <img src="images/deals/d4.jpg" alt="Best Selling Laptops">
+                    <h3>Best Selling Laptops</h3>
+                    <p>Upto 20% Off</p>
+                    <span>HP, Dell & More</span>
+                </div>
 
+                <div class="deal-offer">
+                    <img src="images/deals/d5.jpg" alt="Today's Offer">
+                </div>
 
-            <a href="#" class="nav-link">
-                Beauty
-            </a>
+            </div>
 
+        </section>
 
-            <a href="#" class="nav-link">
-                Appliances
-            </a>
+        <!-- Products Section -->
+        <section class="products-section">
 
+            <h2>Best Selling Products</h2>
 
-            <a href="#" class="nav-link">
-                Featured Deals
-            </a>
+            <div class="products-container">
 
+                <div class="product-card">
+                    <img src="images/products/p1.jpg" alt="Women Essential Kit">
+                    <h3>Women Essential Kit</h3>
+                    <p>Includes all the necessary things for daily health care</p>
 
-            <a href="#" class="nav-link">
-                Mobiles
-            </a>
+                    <div class="product-bottom">
+                        <span>₹299.95</span>
+                        <button>BUY NOW</button>
+                    </div>
+                </div>
 
+                <div class="product-card">
+                    <img src="images/products/product-2.png" alt="Car Cover">
+                    <h3>Car Cover</h3>
+                    <p>Get best deals on all types of car covers from verified sellers</p>
 
-            <a href="#" class="nav-link">
-                More
-                <i class="fa-solid fa-chevron-down"></i>
-            </a>
+                    <div class="product-bottom">
+                        <span>₹299.95</span>
+                        <button>BUY NOW</button>
+                    </div>
+                </div>
 
+                <div class="product-card">
+                    <img src="images/products/product-3.png" alt="Laptops">
+                    <h3>Laptops</h3>
+                    <p>Buy latest pocket friendly laptops with specification</p>
 
-        </nav>
+                    <div class="product-bottom">
+                        <span>₹299.95</span>
+                        <button>BUY NOW</button>
+                    </div>
+                </div>
 
+            </div>
 
-    </header>
+        </section>
 
+        <!-- Latest Section -->
+        <section class="latest-section">
 
+            <h2>Latest Launches</h2>
 
-    <!--JAVASCRIPT-->
+            <div class="latest-container">
 
-    <script>
+                <div class="latest-item">
+                    <img src="images/latest/phone-1.png" alt="MI A2">
+                    <h3>MI A2 (64 GB)</h3>
+                    <p>4 GB RAM</p>
+                    <span>₹7000</span>
+                </div>
 
+                <div class="latest-item">
+                    <img src="images/latest/phone-2.png" alt="Redmi Note 7S">
+                    <h3>Redmi Note 7S</h3>
+                    <p>3 GB RAM</p>
+                    <span>₹11000</span>
+                </div>
 
-        /* OPEN MOBILE MENU*/
+                <div class="latest-item">
+                    <img src="images/latest/phone-3.png" alt="Motorola One">
+                    <h3>Motorola One</h3>
+                    <p>6 GB RAM</p>
+                    <span>₹11000</span>
+                </div>
 
-        function openMobileMenu() {
+                <div class="latest-item">
+                    <img src="images/latest/phone-4.png" alt="Redmi Note 7">
+                    <h3>Redmi Note 7</h3>
+                    <p>4 GB RAM</p>
+                    <span>₹11000</span>
+                </div>
 
-            document
-                .getElementById("categoryNavbar")
-                .classList.add("menu-open");
+                <div class="latest-item">
+                    <img src="images/latest/phone-5.png" alt="OPPO F11 Pro">
+                    <h3>OPPO F11 Pro</h3>
+                    <p>6 GB RAM</p>
+                    <span>₹11000</span>
+                </div>
 
-        }
+                <div class="latest-item">
+                    <img src="images/latest/phone-6.png" alt="Realme C2">
+                    <h3>Realme C2</h3>
+                    <p>2 GB RAM</p>
+                    <span>₹11000</span>
+                </div>
 
-        /* CLOSE MOBILE MENU */
+            </div>
 
-        function closeMobileMenu() {
+        </section>
 
-            document
-                .getElementById("categoryNavbar")
-                .classList.remove("menu-open");
+        <!-- Trending Section -->
+        <section class="trending-section"></section>
 
+        <!-- Discover Section -->
+        <section class="discover-section"></section>
 
-            document
-                .getElementById("categoriesDropdown")
-                .classList.remove("categories-open");
+        <!-- Newsletter Section -->
+        <section class="newsletter-section"></section>
 
-        }
+    </main>
 
-        /* ALL CATEGORIES DROPDOWN  */
+    <footer class="footer"></footer>
 
-        function toggleCategories() {
-
-            document
-                .getElementById("categoriesDropdown")
-                .classList.toggle("categories-open");
-
-        }
-
-        /* CLOSE DROPDOWN WHEN CLICKING OUTSIDE  */
-
-        document.addEventListener(
-            "click",
-            function(event) {
-
-                const categoryBox =
-                    document.querySelector(".all-categories");
-
-                if (
-                    categoryBox &&
-                    !categoryBox.contains(event.target)
-                ) {
-
-                    document
-                        .getElementById("categoriesDropdown")
-                        .classList.remove(
-                            "categories-open"
-                        );
-
-                }
-
-            }
-        );
-
-
-    </script>
-
+    <script src="js/script.js"></script>
 
 </body>
-
 </html>
