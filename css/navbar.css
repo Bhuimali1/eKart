@@ -10,28 +10,33 @@
     margin: auto;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
 }
-
 .logo {
     margin-left: 60px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transform: translateY(68px);
+    position: relative;
+    z-index: 5;
 }
 
 .logo img {
-    width: 80px;
-    height: 50px;
+    width: 48px;
+    height: 48px;
     object-fit: contain;
     display: block;
-    margin-top: 100px;
+    margin-top: 0;
+    filter: brightness(0) invert(1);
 }
 
 .logo span {
-    font-size: 27px;
+    color: white;
+    font-size: 30px;
     font-weight: bold;
     letter-spacing: -1px;
     line-height: 1;
 }
-
 .contact-information {
     flex: 1;
     display: flex;
@@ -59,7 +64,6 @@
 .top-links a {
     color: white;
     text-decoration: none;
-    transition: opacity 0.2s ease;
 }
 
 .top-links a:hover {
@@ -89,7 +93,6 @@
     padding-left: 13%;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
     gap: 18px;
 }
 
@@ -136,7 +139,6 @@
     align-items: stretch;
     overflow: hidden;
     cursor: pointer;
-    transition: background 0.2s ease;
 }
 
 .cart-icon {
@@ -190,12 +192,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 6px;
     color: white;
     text-decoration: none;
     font-size: 14px;
     font-weight: bold;
-    transition: background 0.2s ease;
 }
 
 .nav-link:hover {
@@ -221,7 +221,6 @@
     font-size: 14px;
     font-weight: bold;
     cursor: pointer;
-    transition: background 0.2s ease;
 }
 
 .all-categories-button:hover {
@@ -230,7 +229,6 @@
 
 .category-arrow {
     font-size: 11px;
-    transition: transform 0.2s ease;
 }
 
 .categories-dropdown {
@@ -245,7 +243,7 @@
     opacity: 0;
     visibility: hidden;
     transform: translateY(8px);
-    transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease;
+    transition: 0.2s ease;
     z-index: 100;
 }
 
@@ -271,7 +269,6 @@
     text-decoration: none;
     font-size: 12px;
     border-bottom: 1px solid #eeeeee;
-    transition: background 0.2s ease, color 0.2s ease, padding-left 0.2s ease;
 }
 
 .categories-dropdown a:last-child {
@@ -281,7 +278,6 @@
 .categories-dropdown a:hover {
     background: #eaf7ff;
     color: #0878bd;
-    padding-left: 21px;
 }
 
 .mobile-menu-header {

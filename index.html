@@ -11,11 +11,12 @@
     <link rel="stylesheet" href="css/deals.css">
     <link rel="stylesheet" href="css/products.css">
     <link rel="stylesheet" href="css/latest.css">
-    <link rel="stylesheet" href="css/trending.css">
-    <link rel="stylesheet" href="css/discover.css">
-    <link rel="stylesheet" href="css/newsletter.css">
-    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/trending.css">
+    <link rel="stylesheet" href="css/newsletter.css">
+    <link rel="stylesheet" href="css/discover.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/hover.css">
 </head>
 
 <body>
@@ -26,7 +27,7 @@
         <div class="top-navbar">
 
             <div class="logo">
-                <img src="images/logo/cart.png" alt="Cart">
+                <img src="images/logo/cart.png" alt="eKart">
                 <span>eKart</span>
             </div>
 
@@ -58,7 +59,7 @@
 
             </div>
 
-            <button class="menu-button" type="button" onclick="openMobileMenu()" aria-label="Open menu">
+            <button class="menu-button" type="button" onclick="openMobileMenu()">
                 ☰
             </button>
 
@@ -72,11 +73,15 @@
             </div>
 
             <button class="cart-button" type="button">
+
                 <span class="cart-icon">
                     <img src="images/logo/cart.png" alt="Cart">
                 </span>
+
                 <span class="cart-text">My Cart</span>
+
                 <span class="cart-arrow">⌄</span>
+
             </button>
 
         </div>
@@ -84,26 +89,34 @@
         <nav class="category-navbar" id="categoryNavbar">
 
             <div class="mobile-menu-header">
+
                 <strong>Menu</strong>
 
-                <button class="close-button" type="button" onclick="closeMobileMenu()" aria-label="Close menu">
+                <button class="close-button" type="button" onclick="closeMobileMenu()">
                     ×
                 </button>
+
             </div>
 
             <div class="all-categories">
 
                 <button class="all-categories-button" type="button" onclick="toggleCategories()">
+
                     <span>☰ All Categories</span>
+
+                    <span class="category-arrow">⌄</span>
+
                 </button>
 
                 <div class="categories-dropdown" id="categoriesDropdown">
+
                     <a href="#">Mobiles & Tablets</a>
                     <a href="#">Laptops & Computers</a>
                     <a href="#">Audio</a>
                     <a href="#">Home Appliances</a>
                     <a href="#">Beauty & Personal Care</a>
                     <a href="#">Fashion</a>
+
                 </div>
 
             </div>
@@ -115,14 +128,12 @@
             <a href="#" class="nav-link">Appliances</a>
             <a href="#" class="nav-link">Featured Deals</a>
             <a href="#" class="nav-link">Mobiles</a>
-
-            <a href="#" class="nav-link">
-                More
-            </a>
+            <a href="#" class="nav-link">More</a>
 
         </nav>
 
     </header>
+
 
     <main>
 
@@ -132,6 +143,7 @@
             <div class="hero-content">
 
                 <div class="hero-left">
+
                     <p class="hero-small-text">
                         Premium <strong>3D Phone Mockup Included</strong> with PSD
                     </p>
@@ -144,8 +156,11 @@
                     </p>
 
                     <div class="price-box">
+
                         <span class="price-label">Price</span>
+
                         <span class="price-value">$1500</span>
+
                     </div>
 
                     <div class="preorder-box">
@@ -163,9 +178,12 @@
 
                 </div>
 
+
                 <div class="hero-right">
 
-                    <div class="hero-watermark">PRO</div>
+                    <div class="hero-watermark">
+                        PRO
+                    </div>
 
                     <div class="floating-icon floating-icon-one">
                         <span>♥</span>
@@ -179,13 +197,18 @@
                         <span>♥</span>
                     </div>
 
-                    <img src="images/hero/phone.png" alt="Phone 16 Pro" class="hero-phone">
+                    <img
+                        src="images/hero/phone3.png"
+                        alt="Phone 16 Pro"
+                        class="hero-phone"
+                    >
 
                 </div>
 
             </div>
 
         </section>
+
 
         <!-- Deals Section -->
         <section class="deals-section">
@@ -195,40 +218,67 @@
             <div class="deals-container">
 
                 <div class="deal-item">
-                    <img src="images/deals/d1.png" alt="Grocery & Essentials">
+
+                    <img src="images/deals/d1.png" alt="Grocery and Essentials">
+
                     <h3>Grocery & Essentials</h3>
+
                     <p>Upto 30% Off</p>
+
                     <span>Grab Now</span>
+
                 </div>
 
+
                 <div class="deal-item">
+
                     <img src="images/deals/d2.png" alt="Best of Creams">
+
                     <h3>Best of Creams</h3>
+
                     <p>Upto 30% Off</p>
+
                     <span>Lakme & More</span>
+
                 </div>
 
+
                 <div class="deal-item">
+
                     <img src="images/deals/d3.png" alt="Smart Devices">
+
                     <h3>Smart Devices</h3>
+
                     <p>Upto 30% Off</p>
+
                     <span>Best Deals</span>
+
                 </div>
 
+
                 <div class="deal-item">
+
                     <img src="images/deals/d4.jpg" alt="Best Selling Laptops">
+
                     <h3>Best Selling Laptops</h3>
+
                     <p>Upto 20% Off</p>
+
                     <span>HP, Dell & More</span>
+
                 </div>
+
 
                 <div class="deal-offer">
-                    <img src="images/deals/d5.jpg" alt="Today's Offer">
+
+                    <img src="images/deals/d6.jpg" alt="Today's Offer">
+
                 </div>
 
             </div>
 
         </section>
+
 
         <!-- Products Section -->
         <section class="products-section">
@@ -238,41 +288,86 @@
             <div class="products-container">
 
                 <div class="product-card">
-                    <img src="images/products/p1.jpg" alt="Women Essential Kit">
+
+                    <img
+                        src="images/products/p1.png"
+                        alt="Women Essential Kit"
+                    >
+
                     <h3>Women Essential Kit</h3>
-                    <p>Includes all the necessary things for daily health care</p>
+
+                    <p>
+                        Includes all the necessary things for daily health care
+                    </p>
 
                     <div class="product-bottom">
+
                         <span>₹299.95</span>
-                        <button>BUY NOW</button>
+
+                        <button type="button">
+                            BUY NOW
+                        </button>
+
                     </div>
+
                 </div>
 
+
                 <div class="product-card">
-                    <img src="images/products/product-2.png" alt="Car Cover">
+
+                    <img
+                        src="images/products/p2.png"
+                        alt="Car Cover"
+                    >
+
                     <h3>Car Cover</h3>
-                    <p>Get best deals on all types of car covers from verified sellers</p>
+
+                    <p>
+                        Get best deals on all types of car covers from verified sellers
+                    </p>
 
                     <div class="product-bottom">
+
                         <span>₹299.95</span>
-                        <button>BUY NOW</button>
+
+                        <button type="button">
+                            BUY NOW
+                        </button>
+
                     </div>
+
                 </div>
 
+
                 <div class="product-card">
-                    <img src="images/products/product-3.png" alt="Laptops">
+
+                    <img
+                        src="images/products/p33.png"
+                        alt="Laptops"
+                    >
+
                     <h3>Laptops</h3>
-                    <p>Buy latest pocket friendly laptops with specification</p>
+
+                    <p>
+                        Buy latest pocket friendly laptops with specification
+                    </p>
 
                     <div class="product-bottom">
+
                         <span>₹299.95</span>
-                        <button>BUY NOW</button>
+
+                        <button type="button">
+                            BUY NOW
+                        </button>
+
                     </div>
+
                 </div>
 
             </div>
 
         </section>
+
 
         <!-- Latest Section -->
         <section class="latest-section">
@@ -282,63 +377,321 @@
             <div class="latest-container">
 
                 <div class="latest-item">
-                    <img src="images/latest/phone-1.png" alt="MI A2">
+
+                    <img src="images/latest/phone1.png" alt="MI A2">
+
                     <h3>MI A2 (64 GB)</h3>
+
                     <p>4 GB RAM</p>
+
                     <span>₹7000</span>
+
                 </div>
 
+
                 <div class="latest-item">
-                    <img src="images/latest/phone-2.png" alt="Redmi Note 7S">
+
+                    <img src="images/latest/phone2.png" alt="Redmi Note 7S">
+
                     <h3>Redmi Note 7S</h3>
+
                     <p>3 GB RAM</p>
+
                     <span>₹11000</span>
+
                 </div>
 
+
                 <div class="latest-item">
-                    <img src="images/latest/phone-3.png" alt="Motorola One">
+
+                    <img src="images/latest/phone3.png" alt="Motorola One">
+
                     <h3>Motorola One</h3>
+
                     <p>6 GB RAM</p>
+
                     <span>₹11000</span>
+
                 </div>
 
+
                 <div class="latest-item">
-                    <img src="images/latest/phone-4.png" alt="Redmi Note 7">
+
+                    <img src="images/latest/phone4.png" alt="Redmi Note 7">
+
                     <h3>Redmi Note 7</h3>
+
                     <p>4 GB RAM</p>
+
                     <span>₹11000</span>
+
                 </div>
 
+
                 <div class="latest-item">
-                    <img src="images/latest/phone-5.png" alt="OPPO F11 Pro">
+
+                    <img src="images/latest/phone5.png" alt="OPPO F11 Pro">
+
                     <h3>OPPO F11 Pro</h3>
+
                     <p>6 GB RAM</p>
+
                     <span>₹11000</span>
+
                 </div>
 
+
                 <div class="latest-item">
-                    <img src="images/latest/phone-6.png" alt="Realme C2">
+
+                    <img src="images/latest/phone6.png" alt="Realme C2">
+
                     <h3>Realme C2</h3>
+
                     <p>2 GB RAM</p>
+
                     <span>₹11000</span>
+
                 </div>
 
             </div>
 
         </section>
 
-        <!-- Trending Section -->
-        <section class="trending-section"></section>
+       
+<!-- Trending Offers -->
+<section class="trending-section">
 
-        <!-- Discover Section -->
-        <section class="discover-section"></section>
+    <h2>Trending Offers</h2>
 
-        <!-- Newsletter Section -->
-        <section class="newsletter-section"></section>
+    <div class="trending-container">
+
+        <div class="trending-item">
+            <img src="images/trending/t1.png" alt="Sanitizers">
+            <h3>Sanitizers</h3>
+            <p>Extra 5% Off</p>
+        </div>
+
+        <div class="trending-item">
+            <img src="images/trending/t3.png" alt="Masks">
+            <h3>Masks</h3>
+            <p>Extra 10% Off</p>
+        </div>
+
+        <div class="trending-item">
+            <img src="images/trending/t2.png" alt="Chairs">
+            <h3>Chairs</h3>
+            <p>Top Picks</p>
+        </div>
+
+        <div class="trending-item">
+            <img src="images/trending/t4.png" alt="Bedsheets">
+            <h3>Bedsheets</h3>
+            <p>Extra 10% Off</p>
+        </div>
+
+        <div class="trending-item">
+            <img src="images/trending/t5.png" alt="Hand Bag">
+            <h3>Hand Bag</h3>
+            <p>Best Offers</p>
+        </div>
+
+        <div class="trending-item">
+            <img src="images/trending/t6.png" alt="Gift Pack">
+            <h3>Gift Packs</h3>
+            <p>Top Picks</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Discover Latest -->
+<section class="discover-section">
+
+    <h2>Discover Latest</h2>
+
+    <p class="discover-subtitle">
+        Explore new and popular products
+    </p>
+
+    <div class="discover-container">
+
+        <div class="discover-card">
+
+            <img src="images/discover/d1.jpg" alt="Latest headphones">
+
+            <div class="discover-content">
+
+                <span>Headphones</span>
+
+                <h3>
+                    Jivoire Minimal's Best On-Screen Headphones
+                </h3>
+
+                <p>
+                    Find the newest products and useful ideas
+                    for your everyday lifestyle.
+                </p>
+
+                <a href="#">Read more ›</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="discover-card">
+
+            <img src="images/discover/d2.jpg" alt="Latest beauty products">
+
+            <div class="discover-content">
+
+                <span>Beauty & Wellness</span>
+
+                <h3>
+                    Beautiful Ways To Make Happiness 
+                </h3>
+
+                <p>
+                    Discover popular products, trends and
+                    useful ideas for your daily life.
+                </p>
+
+                <a href="#">Read more ›</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="discover-card">
+
+            <img src="images/discover/d3.jpg" alt="Travel products">
+
+            <div class="discover-content">
+
+                <span>Travel</span>
+
+                <h3>
+                    Going Solo: A Girl's Guide To Traveling Alone
+                </h3>
+
+                <p>
+                    Explore helpful products and ideas for
+                    comfortable and easier travel.
+                </p>
+
+                <a href="#">Read more ›</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Newsletter -->
+<section class="newsletter-section">
+
+    <div class="newsletter-content">
+
+        <h2>Weekly Newsletter</h2>
+
+        <p>
+            Sign up to get weekly newsletters & hand-picked deals
+        </p>
+
+        <form class="newsletter-form">
+
+            <input
+                type="email"
+                placeholder="Enter Email Address"
+                required
+            >
+
+            <button type="submit">
+                Subscribe
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- Footer -->
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-column">
+
+            <h3>Products</h3>
+
+            <a href="#">Mobiles</a>
+            <a href="#">Electronics</a>
+            <a href="#">Fashion</a>
+            <a href="#">Beauty</a>
+            <a href="#">Appliances</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Support</h3>
+
+            <a href="#">Contact Us</a>
+            <a href="#">FAQ</a>
+            <a href="#">Shipping</a>
+            <a href="#">Returns</a>
+            <a href="#">Privacy Policy</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>eKart</h3>
+
+            <a href="#">About Us</a>
+            <a href="#">Careers</a>
+            <a href="#">Blog</a>
+            <a href="#">Sell On eKart</a>
+            <a href="#">Terms & Conditions</a>
+
+        </div>
+
+
+        <div class="footer-column follow-column">
+
+            <h3>Follow Us</h3>
+
+            <div class="social-icons">
+
+                <a href="#">f</a>
+                <a href="#">in</a>
+                <a href="#">◎</a>
+                <a href="#">▶</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 eKart. All rights reserved.
+    </div>
+
+</footer>
 
     </main>
 
-    <footer class="footer"></footer>
 
     <script src="js/script.js"></script>
 

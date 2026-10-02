@@ -1,0 +1,222 @@
+/* Hover Effects */
+
+/* Common transition */
+
+a,
+button,
+input,
+img,
+.product-card,
+.deal-item,
+.latest-item,
+.trending-item,
+.discover-card {
+    transition: all 0.25s ease;
+}
+
+
+/* Navbar */
+
+.nav-link:hover {
+    color: #0878bd;
+    background: #eaf7ff;
+}
+
+.all-categories-button:hover {
+    background: #eaf7ff;
+    color: #0878bd;
+}
+
+.categories-dropdown a:hover {
+    background: #eaf7ff;
+    color: #0878bd;
+}
+
+
+/* Logo */
+
+.logo:hover {
+    opacity: 0.85;
+}
+
+
+/* Search */
+
+.search-box:hover {
+    box-shadow: 0 0 0 2px rgba(8, 120, 189, 0.15);
+}
+
+.search-box input:focus {
+    outline: none;
+}
+
+
+/* Cart */
+
+.cart-button:hover {
+    transform: translateY(-2px);
+}
+
+
+/* Hero */
+
+.hero-arrow:hover {
+    transform: scale(1.08);
+}
+
+.preorder-box:hover {
+    transform: translateY(-2px);
+}
+
+
+/* Deals */
+
+.deal-item:hover {
+    transform: translateY(-5px);
+}
+
+.deal-item:hover img {
+    transform: scale(1.06);
+}
+
+.deal-offer:hover {
+    transform: translateY(-5px);
+}
+
+
+/* Product Cards */
+
+.product-card {
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.product-card:hover img {
+    transform: scale(1.04);
+}
+
+
+/* Latest Launches */
+
+.latest-item:hover {
+    transform: translateY(-4px);
+}
+
+.latest-item:hover img {
+    transform: scale(1.06);
+}
+
+.latest-item:hover h3 {
+    color: #0878bd;
+}
+
+
+/* Trending Offers */
+
+.trending-item:hover {
+    transform: translateY(-4px);
+}
+
+.trending-item:hover img {
+    transform: scale(1.06);
+}
+
+.trending-item:hover h3 {
+    color: #0878bd;
+}
+
+
+/* Discover */
+
+.discover-card {
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.discover-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.discover-card:hover > img {
+    transform: scale(1.03);
+}
+
+.discover-content a:hover {
+    color: #0878bd;
+}
+
+
+/* Newsletter */
+
+.newsletter-form input:hover {
+    border-color: #0878bd;
+}
+
+.newsletter-form input:focus {
+    outline: none;
+    border-color: #0878bd;
+    box-shadow: 0 0 0 2px rgba(8, 120, 189, 0.12);
+}
+
+.newsletter-form button:hover {
+    background: #065f96;
+    transform: translateY(-2px);
+}
+
+
+/* Footer */
+
+.footer-column a:hover {
+    color: #d8f2ff;
+    transform: translateX(3px);
+}
+
+.social-icons a:hover {
+    background: white;
+    color: #0878bd;
+    transform: translateY(-3px);
+}
+
+.footer-bottom:hover {
+    background: rgba(255, 255, 255, 0.04);
+}
+
+
+/* Buttons */
+
+button:hover {
+    cursor: pointer;
+}
+
+
+/* Images */
+
+.hero-phone:hover {
+    transform: scale(1.02);
+}
+
+
+/* Prevent hover movement on small screens */
+
+@media screen and (max-width: 600px) {
+
+    .deal-item:hover,
+    .product-card:hover,
+    .latest-item:hover,
+    .trending-item:hover,
+    .discover-card:hover {
+        transform: none;
+    }
+
+    .hero-phone:hover {
+        transform: none;
+    }
+}

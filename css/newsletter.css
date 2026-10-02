@@ -1,0 +1,65 @@
+/* Weekly Newsletter */
+
+.newsletter-section {
+    width: 100%;
+    padding: 40px 8%;
+    background: #55aee0;
+}
+
+.newsletter-content {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+.newsletter-content h2 {
+    margin-bottom: 10px;
+    color: white;
+    font-size: 25px;
+}
+
+.newsletter-content p {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 13px;
+}
+
+.newsletter-form {
+    width: 70%;
+    max-width: 520px;
+    height: 42px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    background: white;
+}
+
+.newsletter-form input {
+    flex: 1;
+    width: auto;
+    min-width: 0;
+    height: 42px;
+    padding: 0 14px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+}
+
+.newsletter-form button {
+    width: 100px;
+    min-width: 100px;
+    height: 42px;
+    padding: 0;
+    border: none;
+    background: #0878bd;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.newsletter-form button:hover {
+    background: #075f96;
+}

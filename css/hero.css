@@ -28,43 +28,6 @@
     z-index: 5;
 }
 
-.social-links {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 58px;
-}
-
-.social-icon {
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    background: white;
-    color: #111;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 19px;
-    font-weight: bold;
-    flex-shrink: 0;
-}
-
-.social-icon:nth-child(2) {
-    font-size: 14px;
-}
-
-.social-icon:nth-child(3) {
-    font-size: 24px;
-}
-
-.username {
-    margin-left: 4px;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
 .hero-small-text {
     color: white;
     font-size: 16px;
@@ -156,15 +119,12 @@
     background: #f56819;
     color: white;
     font-size: 34px;
-    font-weight: 300;
     cursor: pointer;
-    transition: transform 0.2s ease, background 0.2s ease;
     flex-shrink: 0;
 }
 
 .hero-arrow:hover {
     background: #ff782d;
-    transform: translateX(4px);
 }
 
 .hero-right {
@@ -189,13 +149,13 @@
 }
 
 .hero-phone {
-    width: 470px;
+    width: auto;
+    height: 500px;
     max-width: 100%;
-    height: auto;
     display: block;
     position: relative;
     z-index: 3;
-    transform: rotate(-25deg);
+    transform: rotate(0deg);
     object-fit: contain;
     filter: drop-shadow(-20px 25px 25px rgba(0, 0, 0, 0.45));
 }

@@ -11,6 +11,7 @@
 }
 
 .products-container {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 35px;
@@ -19,6 +20,7 @@
 .product-card {
     background: #f8f8f8;
     padding: 20px;
+    min-width: 0;
 }
 
 .product-card img {
@@ -47,6 +49,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 10px;
 }
 
 .product-bottom span {
@@ -63,4 +66,8 @@
     font-size: 11px;
     font-weight: bold;
     cursor: pointer;
+}
+
+.product-bottom button:hover {
+    background: #075f96;
 }
